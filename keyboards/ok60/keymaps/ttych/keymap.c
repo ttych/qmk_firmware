@@ -206,7 +206,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   case M_P_U_L: {
     if (record->event.pressed) {
       send_string(m_p_u_l);
-      tap_code(KC_ENT);
     }
     break;
   }
@@ -245,7 +244,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   case M_P_5_SE_L: {
     if(record->event.pressed) {
       send_string(m_p_5_se_l);
-      tap_code(KC_ENT);
     }
     break;
   }
@@ -261,7 +259,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   case M_P_5_W_L: {
     if(record->event.pressed) {
       send_string(m_p_5_w_l);
-      tap_code(KC_ENT);
     }
     break;
   }
@@ -285,7 +282,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   case M_P_5_U_L: {
     if(record->event.pressed) {
       send_string(m_p_5_u_l);
-      tap_code(KC_ENT);
     }
     break;
   }
