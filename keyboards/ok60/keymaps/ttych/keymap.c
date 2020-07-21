@@ -222,7 +222,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   case M_P_S_P: {
     if (record->event.pressed) {
       send_string(m_p_s_p);
-      tap_code(KC_ENT);
     }
     break;
   }
