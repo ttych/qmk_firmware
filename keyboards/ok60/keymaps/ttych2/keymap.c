@@ -162,10 +162,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          ),
     [15] = LAYOUT_60_ansi(
                           KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL,
-                          KC_F13, KC_PGUP, KC_UP, KC_PGDN, KC_HOME, KC_BRIU, KC_NO, KC_NO, KC_NO, KC_NO, KC_PSCR, KC_SLCK, KC_PAUS, RESET,
-                          KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_END, KC_BRID, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_INS, KC_NO,
+                          KC_F13, KC_PGUP, KC_UP, KC_PGDN, KC_HOME, KC_BRIU, KC_NO, KC_NO, KC_NO, KC_NO, KC_PSCR, KC_SLCK, KC_PAUS, RGB_M_R,
+                          KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_END, KC_BRID, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_INS, RGB_M_K,
                           KC_LSFT, RGB_M_B, RGB_M_X, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), TO(7), KC_MUTE,
-                          KC_LCTL, KC_LGUI, KC_LALT, RGB_TOG, RGB_M_R, KC_TRNS, KC_VOLD, KC_VOLU
+                          KC_LCTL, KC_LGUI, KC_LALT, RGB_TOG, RESET, KC_TRNS, KC_VOLD, KC_VOLU
                           )
 };
 
