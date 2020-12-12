@@ -113,8 +113,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          ),
     [8] = LAYOUT_60_ansi(
                          KC_NO, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), TO(7), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_WH_U, KC_MS_U, KC_WH_D, KC_NO, KC_NO, KC_NO, M_P_U_L, M_P_U_M, M_P_S_P_A, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_NO, KC_NO, KC_NO, M_P_U_P, KC_NO, M_P_S_P, KC_NO, KC_NO, KC_NO,
+                         KC_NO, KC_WH_U, KC_MS_U, KC_WH_D, KC_NO, KC_NO, KC_NO, M_P_U_L, M_P_U_M, KC_NO, M_P_S_P_A, KC_NO, KC_NO, KC_NO,
+                         KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_NO, KC_NO, KC_NO, M_P_U_P, KC_NO, KC_NO, M_P_S_P, KC_NO, KC_NO,
                          KC_BTN3, KC_ACL0, KC_ACL1, KC_ACL2, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
                          KC_NO, KC_NO, KC_NO, KC_BTN1, KC_NO, KC_NO, KC_TRNS, KC_NO
                          ),
@@ -127,8 +127,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          ),
     [10] = LAYOUT_60_ansi(
                          KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_W_L, M_P_5_U_L, M_P_5_M, M_P_S_P_A, M_P_5_SE_L, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_W_P, M_P_5_W_P, KC_NO, M_P_S_P, M_P_5_SE_P, KC_NO, KC_NO,
+                         KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_W_L, M_P_5_U_L, M_P_5_M, M_P_5_SE_L, M_P_S_P_A, KC_NO, KC_NO, KC_NO,
+                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_W_P, M_P_5_W_P, KC_NO, M_P_5_SE_P, M_P_S_P, KC_NO, KC_NO,
                          KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_W_C, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
                          KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
                          ),
