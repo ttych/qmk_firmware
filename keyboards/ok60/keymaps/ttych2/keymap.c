@@ -55,118 +55,125 @@ enum custom_keycodes {
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [0] = LAYOUT_60_ansi(
-                         KC_GESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC,
-                         KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC, KC_BSLS,
-                         MO(15), KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_ENT,
-                         KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_LSFT,
-                         KC_LCTL, KC_LGUI, KC_LALT, KC_SPC, KC_RALT, MO(15), MO(8), KC_RCTL
-                         ),
-    [1] = LAYOUT_60_ansi(
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15), MO(9), KC_TRNS
-                         ),
-    [2] = LAYOUT_60_ansi(
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15), MO(10), KC_TRNS
-                         ),
-    [3] = LAYOUT_60_ansi(
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15), MO(8), KC_TRNS
-                         ),
-    [4] = LAYOUT_60_ansi(
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15), MO(11), KC_TRNS
-                         ),
-    [5] = LAYOUT_60_ansi(
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15), MO(12), KC_TRNS
-                         ),
-    [6] = LAYOUT_60_ansi(
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15), MO(13), KC_TRNS
-                         ),
-    [7] = LAYOUT_60_ansi(
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15), MO(14), KC_TRNS
-                         ),
-    [8] = LAYOUT_60_ansi(
-                         KC_NO, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), TO(7), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_WH_U, KC_MS_U, KC_WH_D, KC_NO, KC_NO, KC_NO, M_P_U_L, M_P_U_M, KC_NO, M_P_S_P_A, KC_NO, KC_NO, KC_NO,
-                         KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_NO, KC_NO, KC_NO, M_P_U_P, KC_NO, KC_NO, M_P_S_P, KC_NO, KC_NO,
-                         KC_BTN3, KC_ACL0, KC_ACL1, KC_ACL2, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_BTN1, KC_NO, KC_NO, KC_TRNS, KC_NO
-                         ),
-    [9] = LAYOUT_60_ansi(
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
-                         ),
-    [10] = LAYOUT_60_ansi(
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_W_L, M_P_5_U_L, M_P_5_M, M_P_5_SE_L, M_P_S_P_A, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_W_P, M_P_5_W_P, KC_NO, M_P_5_SE_P, M_P_S_P, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_W_C, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
-                         ),
-    [11] = LAYOUT_60_ansi(
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
-                         ),
-    [12] = LAYOUT_60_ansi(
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
-                         ),
-    [13] = LAYOUT_60_ansi(
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
-                         ),
-    [14] = LAYOUT_60_ansi(
-                         KC_NO, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), TO(7), BL_DEC, BL_INC, BL_BRTG, BL_STEP, BL_TOGG,
-                         KC_NO, KC_WH_U, KC_MS_U, KC_WH_D, KC_NO, KC_NO, KC_NO, RGB_M_T, RGB_M_G, RGB_M_SW, RGB_M_R, RGB_M_B, RGB_M_K, RGB_M_SN,
-                         KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_NO, KC_NO, KC_NO, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, RGB_MOD, RGB_TOG,
-                         KC_BTN3, KC_ACL0, KC_ACL1, KC_ACL2, KC_NO, KC_NO, KC_NO, RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD, RGB_M_P,
-                         KC_NO, KC_NO, KC_NO, KC_BTN1, KC_NO, KC_NO, KC_TRNS, RGB_M_X
-                         ),
-    [15] = LAYOUT_60_ansi(
-                          KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL,
-                          KC_F13, KC_PGUP, KC_UP, KC_PGDN, KC_HOME, KC_BRIU, KC_NO, KC_NO, KC_NO, KC_NO, KC_PSCR, KC_SLCK, KC_PAUS, RGB_M_R,
-                          KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_END, KC_BRID, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_INS, RGB_TOG,
-                          KC_LSFT, RGB_M_B, RGB_M_SN, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), TO(7), KC_MUTE,
-                          KC_LCTL, KC_LGUI, KC_LALT, KC_NO, RESET, KC_TRNS, KC_VOLD, KC_VOLU
-                          )
+  [0] = LAYOUT_60_ansi(
+                       KC_GESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC,  /* 14 */
+                       KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC, KC_BSLS,  /* 14 */
+                       MO(15), KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_ENT,         /* 13 */
+                       KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_LSFT,           /* 12 */
+                       KC_LCTL, KC_LGUI, KC_LALT, KC_SPC, KC_RALT, MO(15), MO(7), KC_RCTL                              /*  8 */
+                       ),
+  [1] = LAYOUT_60_ansi(
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15),  MO(8),   KC_TRNS
+                       ),
+  [2] = LAYOUT_60_ansi(
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15),  MO(9),  KC_TRNS
+                       ),
+  [3] = LAYOUT_60_ansi(
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15),  MO(10),   KC_TRNS
+                       ),
+  [4] = LAYOUT_60_ansi(
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15),  MO(11),  KC_TRNS
+                       ),
+  [5] = LAYOUT_60_ansi(
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15),  MO(12),  KC_TRNS
+                       ),
+  [6] = LAYOUT_60_ansi(
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       MO(15),  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MO(15),  MO(13),  KC_TRNS
+                       ),
+  /* 0 + */
+  [7] = LAYOUT_60_ansi(
+                       RESET, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), TO(7), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                       KC_NO, KC_WH_U, KC_MS_U, KC_WH_D, KC_NO, KC_NO, KC_NO, M_P_U_L, M_P_U_M, KC_NO, M_P_S_P_A, KC_NO, KC_NO, KC_NO,
+                       KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_NO, KC_NO, KC_NO, M_P_U_P, KC_NO, KC_NO, M_P_S_P, KC_NO, KC_NO,
+                       KC_BTN3, KC_ACL0, KC_ACL1, KC_ACL2, KC_NO, KC_NO, RGB_M_B, RGB_M_P, RGB_M_SN, RGB_M_K, RGB_M_X, RGB_TOG,
+                       KC_NO, KC_NO, KC_NO, KC_BTN1, KC_NO, KC_NO, KC_TRNS, KC_NO
+                       ),
+  /* 1 + */
+  [8] = LAYOUT_60_ansi(
+                       KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                       KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                       KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                       KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                       KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
+                       ),
+  /* 2 + */
+  [9] = LAYOUT_60_ansi(
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
+                        ),
+  /* 3 + */
+  [10] = LAYOUT_60_ansi(
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, M_AGE3_US_FOOD, M_AGE3_US_WOOD, M_AGE3_US_GOLD, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, M_AGE3_US_MAP, M_AGE3_US_SPEED, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, M_AGE3_US_TUCK, M_AGE3_US_LAZERBEAR, M_AGE3_US_FLUFFY, M_AGE3_US_ARTILLERY, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, M_AGE3_US_EXP, KC_NO, KC_NO, KC_TRNS, KC_NO
+                        ),
+  /* 4 + */
+  [11] = LAYOUT_60_ansi(
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_W_L, M_P_5_U_L, M_P_5_M, M_P_5_SE_L, M_P_S_P_A, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_W_P, M_P_5_W_P, KC_NO, M_P_5_SE_P, M_P_S_P, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_W_C, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
+                        ),
+  /* 5 + */
+  [12] = LAYOUT_60_ansi(
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
+                        ),
+  /* 6 + */
+  [13] = LAYOUT_60_ansi(
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
+                        ),
+  [14] = LAYOUT_60_ansi(
+                        KC_GESC, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), TO(14), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+                        KC_NO, RGB_MOD, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, KC_NO, KC_NO, KC_NO, BL_TOGG, BL_STEP, BL_INC, KC_NO, KC_NO,
+                        MO(15), RGB_RMOD, RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD, KC_NO, KC_NO, KC_NO, KC_NO, BL_BRTG, BL_DEC, RGB_TOG,
+                        KC_NO, RGB_M_P, RGB_M_X, RGB_M_R, RGB_M_SW, RGB_M_B, RGB_M_SN, RGB_M_K, RGB_M_G, RGB_M_T, KC_NO, KC_NO,
+                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, MO(15), KC_NO, KC_NO
+                        ),
+  [15] = LAYOUT_60_ansi(
+                        KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL,
+                        KC_F13, KC_PGUP, KC_UP, KC_PGDN, KC_HOME, KC_VOLU, KC_BRIU,  KC_WH_U, KC_MS_U, KC_WH_D, KC_PSCR, KC_SLCK, KC_PAUS, KC_INS,
+                        KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_END, KC_VOLD, KC_BRID, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1, KC_BTN2, RGB_TOG,
+                        KC_LSFT, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), TO(14), RGB_M_B, KC_BTN3, KC_MUTE,
+                        KC_LCTL, KC_LGUI, KC_LALT, KC_SPC, KC_RALT, KC_TRNS, KC_VOLD, KC_VOLU
+                        )
 };
 
 
