@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_60_ansi(
                        KC_GESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS, KC_EQL, KC_BSPC,  /* 14 */
                        KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC, KC_BSLS,  /* 14 */
-                       MO(15), KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_ENT,         /* 13 */
+                       MO(14), KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_ENT,         /* 13 */
                        KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_LSFT,           /* 12 */
                        KC_LCTL, KC_LGUI, KC_LALT, KC_SPC, KC_RALT, MO(15), MO(7), KC_RCTL                              /*  8 */
                        ),
@@ -160,20 +160,29 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
                         ),
+  /* func1 */
   [14] = LAYOUT_60_ansi(
-                        KC_GESC, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), TO(14), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                        KC_NO, RGB_MOD, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, KC_NO, KC_NO, KC_NO, BL_TOGG, BL_STEP, BL_INC, KC_NO, KC_NO,
-                        MO(15), RGB_RMOD, RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD, KC_NO, KC_NO, KC_NO, KC_NO, BL_BRTG, BL_DEC, RGB_TOG,
-                        KC_NO, RGB_M_P, RGB_M_X, RGB_M_R, RGB_M_SW, RGB_M_B, RGB_M_SN, RGB_M_K, RGB_M_G, RGB_M_T, KC_NO, KC_NO,
-                        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, MO(15), KC_NO, KC_NO
+                        KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL,
+                        KC_F13, KC_PGUP, KC_UP, KC_PGDN, KC_HOME, KC_NO, KC_BRIU,  KC_WH_U, KC_MS_U, KC_WH_D, KC_PSCR, KC_SLCK, KC_PAUS, KC_INS,
+                        MO(14), KC_LEFT, KC_DOWN, KC_RGHT, KC_END, KC_NO, KC_BRID, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1, KC_BTN2, RGB_TOG,
+                        KC_LSFT, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), KC_VOLD, KC_VOLU, KC_BTN3, KC_MUTE,
+                        KC_LCTL, KC_LGUI, KC_LALT, KC_SPC, KC_RALT, MO(15), KC_APP, KC_RCTL
                         ),
+  /* func2 */
   [15] = LAYOUT_60_ansi(
                         KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL,
-                        KC_F13, KC_PGUP, KC_UP, KC_PGDN, KC_HOME, KC_VOLU, KC_BRIU,  KC_WH_U, KC_MS_U, KC_WH_D, KC_PSCR, KC_SLCK, KC_PAUS, KC_INS,
-                        KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_END, KC_VOLD, KC_BRID, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1, KC_BTN2, RGB_TOG,
-                        KC_LSFT, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), TO(14), RGB_M_B, KC_BTN3, KC_MUTE,
-                        KC_LCTL, KC_LGUI, KC_LALT, KC_SPC, KC_RALT, KC_TRNS, KC_VOLD, KC_VOLU
-                        )
+                        KC_F13, KC_PGUP, KC_UP, KC_PGDN, KC_HOME, KC_TRNS, KC_TRNS, KC_NO, RGB_M_R, RGB_M_SW, RGB_M_P, RGB_RMOD, RGB_MOD, KC_NO,
+                        MO(14), KC_LEFT, KC_DOWN, KC_RGHT, KC_END, KC_TRNS, KC_TRNS, KC_TRNS, RGB_M_K, RGB_M_SN, RGB_M_T, RGB_M_B, RGB_TOG,
+                        KC_LSFT, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), KC_VOLD, KC_VOLU, RGB_M_X, KC_MUTE,
+                        KC_LCTL, KC_LGUI, KC_LALT, KC_SPC, KC_RALT, MO(15), KC_APP, KC_RCTL
+                       ),
+  /* [15] = LAYOUT_60_ansi( */
+  /*                       KC_GRV, TO(0), TO(1), TO(2), TO(3), TO(4), TO(5), TO(6), TO(14), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, */
+  /*                       KC_NO, RGB_MOD, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, KC_NO, KC_NO, KC_NO, BL_TOGG, BL_STEP, BL_INC, KC_NO, KC_NO, */
+  /*                       MO(15), RGB_RMOD, RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD, KC_NO, KC_NO, KC_NO, KC_NO, BL_BRTG, BL_DEC, RGB_TOG, */
+  /*                       KC_NO, RGB_M_P, RGB_M_X, RGB_M_R, RGB_M_SW, RGB_M_B, RGB_M_SN, RGB_M_K, RGB_M_G, RGB_M_T, KC_NO, KC_NO, */
+  /*                       KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, MO(15), KC_NO, KC_NO */
+  /*                       ) */
 };
 
 
