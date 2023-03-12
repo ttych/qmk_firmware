@@ -142,7 +142,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /* 4 + */
   [11] = LAYOUT_60_ansi(
                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                        KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, M_P_5_WH_L, M_P_5_W_L, M_P_5_U_L, M_P_5_M, M_P_5_SE_L, M_P_S_P_A, KC_NO, KC_NO, KC_NO,
+                        KC_NO, KC_1,  KC_NO, KC_NO, KC_NO, M_P_5_WH_L, M_P_5_W_L, M_P_5_U_L, M_P_5_M, M_P_5_SE_L, M_P_S_P_A, M_P_5_PP, KC_NO, KC_NO,
                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_WH_P, M_P_5_W_P, M_P_5_W_P, KC_NO, M_P_5_SE_P, M_P_S_P, KC_NO, KC_NO,
                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, M_P_5_W_C, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
                         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO
