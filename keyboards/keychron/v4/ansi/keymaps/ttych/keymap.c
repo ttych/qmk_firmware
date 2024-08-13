@@ -167,16 +167,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_FNC] = LAYOUT_60_ansi(
         KC_GRV,   KC_F1,    KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,   KC_F11,   KC_F12,   KC_DEL,
-        KC_F13,   KC_PGUP,  KC_UP,   KC_PGDN, KC_HOME, KC_VOLU, KC_BRIU, KC_WH_U, KC_MS_U, KC_WH_D, KC_PSCR,  KC_SCRL,  KC_PAUS,  KC_INS,
-        MO(_FNC), KC_LEFT,  KC_DOWN, KC_RGHT, KC_END,  KC_VOLD, KC_BRID, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1,  KC_BTN2,            RGB_TOG,
-        _______,            _______, _______, _______, _______, _______, _______, KC_MUTE, KC_VOLD, KC_VOLU,  KC_BTN3,            KC_MUTE,
+        KC_F13,   KC_PGUP,  KC_UP,   KC_PGDN, KC_HOME, _______, KC_BRIU, KC_WH_U, KC_MS_U, KC_WH_D, KC_PSCR,  KC_SCRL,  KC_PAUS,  KC_INS,
+        MO(_FNC), KC_LEFT,  KC_DOWN, KC_RGHT, KC_END,  _______, KC_BRID, KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1,  KC_BTN2,            RGB_TOG,
+        _______,            _______, _______, _______, _______, _______, _______, KC_MUTE, KC_VOLD, KC_VOLU,  KC_BTN3,            KC_ACL0,
         _______,  _______,  _______,                            _______,                            _______,  MO(_FN),  KC_APP,   NK_TOGG),
 
     [_FN] = LAYOUT_60_ansi(
         KC_GRV,   KC_F1,    KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,   KC_F11,   KC_F12,   KC_DEL,
-        KC_F13,   KC_PGUP,  KC_UP,   KC_PGDN, KC_HOME, KC_VOLU, KC_BRIU, _______, _______, _______, KC_PSCR,  KC_SCRL,  KC_PAUS,  KC_INS,
-        KC_CAPS,  KC_LEFT,  KC_DOWN, KC_RGHT, KC_END,  KC_VOLD, KC_BRID, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI,  RGB_MOD,            RGB_TOG,
-        _______,            _______, RGB_M_P, RGB_M_SW, RGB_M_R, RGB_M_B, RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD,  RGB_RMOD,           KC_MUTE,
-        _______,  _______,  _______,                            _______,                            _______,  MO(_FN),  KC_APP,   NK_TOGG)
+        KC_F13,   KC_PGUP,  KC_UP,   KC_PGDN, KC_HOME, _______, KC_BRIU, _______, _______, _______, KC_PSCR,  KC_SCRL,  KC_PAUS,  KC_INS,
+        KC_CAPS,  KC_LEFT,  KC_DOWN, KC_RGHT, KC_END,  _______, KC_BRID, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI,  RGB_MOD,            RGB_TOG,
+        _______,            _______, RGB_M_P, RGB_M_SW, RGB_M_R, RGB_M_B, RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD, RGB_RMOD,           KC_MUTE,
+        _______,  _______,  _______,                            _______,                            _______,  MO(_FN),  KC_APP,   QK_BOOT),
 
 };
