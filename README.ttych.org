@@ -1,0 +1,7 @@
+* keychron v4
+make keychron/v4/ansi:ttych
+make keychron/v4/ansi:ttych:flash
+* git
+** push
+git push --recurse-submodules=no gitlab ttych
+git push --recurse-submodules=no github ttych
