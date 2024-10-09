@@ -37,9 +37,9 @@ enum custom_keycodes {
     MS_MPP,
     MS_WWL,
     MS_WWP,
-    MS_WWPL,
+    MS_WSL,
+    MS_WSP,
     MS_WWC,
-    MS_WUL,
     MS_WHL,
     MS_WHP,
     MS_WPP,
@@ -72,21 +72,21 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
     break;
 
-  case MS_WWPL:
+  case MS_WSL:
     if (record->event.pressed) {
-      SEND_STRING(ms_wwpl);
+      SEND_STRING(ms_wsl);
+    }
+    break;
+
+  case MS_WSP:
+    if (record->event.pressed) {
+      SEND_STRING(ms_wsp);
     }
     break;
 
   case MS_WWC:
     if (record->event.pressed) {
       SEND_STRING(ms_wwc);
-    }
-    break;
-
-  case MS_WUL:
-    if (record->event.pressed) {
-      SEND_STRING(ms_wul);
     }
     break;
 
@@ -160,8 +160,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_FNM] = LAYOUT_60_ansi(
         _______,  _______,  _______, _______, _______, _______, _______, _______, _______, _______, _______,  MS_MP,    MS_MPP,   _______,
-        _______,  _______,  _______, _______, _______, _______, _______, _______, MS_WHL,  MS_WWL,  MS_WUL,   MS_WPP,   _______,  _______,
-        _______,  _______,  _______, _______, _______, _______, _______, _______, MS_WHP,  MS_WWP,  MS_WWPL,  _______,            _______,
+        _______,  _______,  _______, _______, _______, _______, _______, _______, MS_WHL,  MS_WWL,  MS_WSL,   MS_WPP,   _______,  _______,
+        _______,  _______,  _______, _______, _______, _______, _______, _______, MS_WHP,  MS_WWP,  MS_WSP,   _______,            _______,
         _______,            _______, _______, _______, _______, _______, _______, _______, _______, MS_WWC,   _______,            _______,
         _______,  _______,  _______,                            _______,                            _______,  _______,  _______,  _______),
 
